@@ -31,7 +31,7 @@ function convertToASCII(str) {
 
 // Example usage
 const input1 = "Hello World You";
-console.log(transformString(input1));  // Output based on the length of the string
+console.log(transformString(input1));  // Output based on the length of the string of 15 it will return the string reversed and in ascii
 
 const input2 = "Exampl";
-console.log(transformString(input2));  // Output based on the length of the string
+console.log(transformString(input2));  // the output will be a reversed string as the length of the string is divisible by 3
