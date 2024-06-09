@@ -1,105 +1,159 @@
+/* Importing the Poppins font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* Setting basic styles for the body */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #000;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
+  font-family: Arial, sans-serif; /* Fallback font */
+  background-color: #000; /* Background color */
+  margin: 0; /* Removing default margin */
+  padding: 0; /* Removing default padding */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Centering horizontally */
+  align-items: center; /* Centering vertically */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hiding overflow */
 }
 
+/* Resetting margin, padding, and box-sizing for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Styling the gallery container */
 .gallery {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Centering items */
+  width: 100%; /* Full width */
 }
 
+/* Styling individual gallery items */
 .gallery-item {
-  position: relative;
-  overflow: hidden;
-  width: 25%; 
-  height: 100vh;
+  position: relative; /* For positioning child elements */
+  overflow: hidden; /* Hiding overflow */
+  width: 25%; /* 25% width of parent container */
+  height: 100vh; /* Full viewport height */
   padding: 0;
   margin: 0;
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Styling the image container within each gallery item */
 .image-div {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  transition: all ease-out 0.4s;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-size: cover; /* Covering the container */
+  background-position: center; /* Centering the image */
+  transition: all ease-out 0.4s; /* Smooth transition */
 }
 
+/* Adding hover effect for images */
 .image-div:hover {
-  filter: blur(5px) brightness(20%);
+  filter: blur(5px) brightness(20%); /* Blurring and dimming the image */
 }
 
+/* Styling for the 'Know more' text */
 .know-more {
-  display: none;
-  margin-top: 5px;
-  transition: all ease-out 0.4s;
-  font-family: "Poppins", sans-serif;
-  color: blue;
-  text-align: left;
+  display: none; /* Hidden by default */
+  margin-top: 5px; /* Margin from the top */
+  transition: all ease-out 0.4s; /* Smooth transition */
+  font-family: "Poppins", sans-serif; /* Poppins font */
+  color: dodgerblue; /* Text color */
+  text-align: left; /* Left-aligned text */
 }
 
+/* Displaying the caption and 'Know more' text on hover */
 .gallery-item:hover .caption {
-  padding-bottom: 20px;
+  padding-bottom: 20px; /* Padding at the bottom */
 }
 
 .gallery-item:hover .know-more {
-  display: block;
+  display: block; /* Displaying the 'Know more' text */
 }
 
+/* Keyframes for fade-in animation */
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0; /* Starting opacity */
   }
   to {
-    opacity: 1;
+    opacity: 1; /* Ending opacity */
   }
 }
 
+/* Styling for the titles */
 .titles {
-  font-size: 30px;
-  line-height: 38px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: left;
+  font-size: 30px; /* Font size */
+  line-height: 38px; /* Line height */
+  font-weight: 700; /* Font weight */
+  text-transform: uppercase; /* Uppercase text */
+  text-align: left; /* Left-aligned text */
+  font-family: "Poppins", sans-serif; /* Poppins font */
 }
 
+/* Styling for the location text */
 .locations {
-  margin-top: 10px;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  line-height: 16.02px;
-  opacity: 70%;
-  text-align: left;
+  margin-top: 10px; /* Margin from the top */
+  font-family: "Poppins", sans-serif; /* Poppins font */
+  font-size: 12px; /* Font size */
+  line-height: 16.02px; /* Line height */
+  opacity: 70%; /* Opacity */
+  text-align: left; /* Left-aligned text */
 }
 
+/* Media query for larger screens */
 @media (min-width: 1024px) {
   .caption {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    padding-bottom: 15px;
-    transition: all ease-out 0.4s;
+    position: absolute; /* Absolute positioning */
+    bottom: 0; /* Aligning to the bottom */
+    width: 100%; /* Full width */
+    color: #fff; /* Text color */
+    text-align: center; /* Center-aligned text */
+    padding: 10px; /* Padding */
+    padding-bottom: 15px; /* Additional bottom padding */
+    transition: all ease-out 0.4s; /* Smooth transition */
   }
   .gallery {
-    width: 95vw;
+    width: 95vw; /* 95% of the viewport width */
   }
+}
+
+/* Styling for the modal container */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed positioning */
+  z-index: 1; /* High z-index */
+  left: 0; /* Aligning to the left */
+  top: 0; /* Aligning to the top */
+  padding: 20px; /* Padding */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Scrolling for overflow content */
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+}
+
+/* Styling for the modal content (full-size image) */
+.modal-content {
+  margin: auto; /* Centering */
+  display: block; /* Block display */
+  height: 100%; /* Full height */
+}
+
+/* Styling for the close button */
+.close {
+  position: absolute; /* Absolute positioning */
+  top: 15px; /* Aligning to the top */
+  right: 35px; /* Aligning to the right */
+  color: #fff; /* Text color */
+  font-size: 40px; /* Font size */
+  font-weight: bold; /* Font weight */
+}
+
+/* Hover and focus effects for the close button */
+.close:hover,
+.close:focus {
+  color: #bbb; /* Color on hover/focus */
+  text-decoration: none; /* Removing underline */
+  cursor: pointer; /* Pointer cursor */
 }

@@ -4,15 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Gallery</title>
+    <!-- Linking the external CSS file -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Gallery container -->
     <div class="gallery">
-      <div class="gallery-item">
+      <!-- Gallery item 1 -->
+      <div class="gallery-item" data-full="./images/image1.png">
+        <!-- Div to display the image as background -->
         <div
           class="image-div"
           style="background-image: url('./images/image1.png')"
         ></div>
+        <!-- Caption section for the image -->
         <div class="caption">
           <p class="titles">
             fennec <br />
@@ -22,7 +27,8 @@
           <p class="know-more">Know more</p>
         </div>
       </div>
-      <div class="gallery-item">
+      <!-- Gallery item 2 -->
+      <div class="gallery-item" data-full="./images/image2.png">
         <div
           class="image-div"
           style="background-image: url('./images/image2.png')"
@@ -36,7 +42,8 @@
           <p class="know-more">Know more</p>
         </div>
       </div>
-      <div class="gallery-item">
+      <!-- Gallery item 3 -->
+      <div class="gallery-item" data-full="./images/image3.png">
         <div
           class="image-div"
           style="background-image: url('./images/image3.png')"
@@ -50,7 +57,8 @@
           <p class="know-more">Know more</p>
         </div>
       </div>
-      <div class="gallery-item">
+      <!-- Gallery item 4 -->
+      <div class="gallery-item" data-full="./images/image4.png">
         <div
           class="image-div"
           style="background-image: url('./images/image4.png')"
@@ -65,6 +73,16 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal for full-size image viewing -->
+    <div id="modal" class="modal">
+      <!-- Close button for the modal -->
+      <span class="close">&times;</span>
+      <!-- Full-size image container -->
+      <img class="modal-content" id="fullImage" />
+    </div>
+
+    <!-- Linking the external JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>

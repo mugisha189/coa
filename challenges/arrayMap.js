@@ -1,3 +1,10 @@
+/**
+ * Checks if there is a contiguous subarray within a given array `nums` that sums to `target`.
+ *
+ * @param {number[]} nums - The array of numbers to check.
+ * @param {number} target - The target sum for the subarray.
+ * @returns {boolean} - Returns true if such a subarray is found, otherwise false.
+ */
 function hasContiguousSubarrayWithSum(nums, target) {
     // Initialize the left pointer to the start of the array
     let left = 0;
@@ -31,5 +38,5 @@ function hasContiguousSubarrayWithSum(nums, target) {
 
 // Example usage
 const nums = [1, 2, 3, 4, 5];
-const target = 9;
+const target = 89;
 console.log(hasContiguousSubarrayWithSum(nums, target));  // Output: true
