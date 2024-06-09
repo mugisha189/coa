@@ -22,7 +22,7 @@ To clone this repository, follow these steps:
 2. Navigate to the directory where you want to clone the repository.
 3. Run the following command:
 ```
-  git clone https://github.com/yourusername/COA.git
+  git clone https://github.com/mugisha189/coa.git
 ```
 4. Navigate into the cloned repository:
 ```
