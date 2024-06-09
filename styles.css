@@ -27,7 +27,7 @@ body {
 .gallery-item {
   position: relative;
   overflow: hidden;
-  width: 25%; /* Adjust the width as needed */
+  width: 25%; 
   height: 100vh;
   padding: 0;
   margin: 0;
