@@ -19,6 +19,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Styling the gallery container */
@@ -45,7 +46,7 @@ body {
   height: 100%; /* Full height */
   background-size: cover; /* Covering the container */
   background-position: center; /* Centering the image */
-  transition: all ease-out 0.4s; /* Smooth transition */
+  transition: all ease-out 0.5s; /* Smooth transition */
 }
 
 /* Adding hover effect for images */
@@ -57,8 +58,7 @@ body {
 .know-more {
   display: none; /* Hidden by default */
   margin-top: 5px; /* Margin from the top */
-  transition: all ease-out 0.4s; /* Smooth transition */
-  font-family: "Poppins", sans-serif; /* Poppins font */
+  transition: all ease-out 0.5s; /* Smooth transition */
   color: dodgerblue; /* Text color */
   text-align: left; /* Left-aligned text */
 }
@@ -89,13 +89,11 @@ body {
   font-weight: 700; /* Font weight */
   text-transform: uppercase; /* Uppercase text */
   text-align: left; /* Left-aligned text */
-  font-family: "Poppins", sans-serif; /* Poppins font */
 }
 
 /* Styling for the location text */
 .locations {
   margin-top: 10px; /* Margin from the top */
-  font-family: "Poppins", sans-serif; /* Poppins font */
   font-size: 12px; /* Font size */
   line-height: 16.02px; /* Line height */
   opacity: 70%; /* Opacity */
@@ -112,7 +110,7 @@ body {
     text-align: center; /* Center-aligned text */
     padding: 10px; /* Padding */
     padding-bottom: 15px; /* Additional bottom padding */
-    transition: all ease-out 0.4s; /* Smooth transition */
+    transition: all ease-out 0.5s; /* Smooth transition */
   }
   .gallery {
     width: 95vw; /* 95% of the viewport width */
